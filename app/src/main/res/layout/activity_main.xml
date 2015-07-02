@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <nl.frankkie.ventilatorapp.FanView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/fanview"
+        android:layout_width="192dp"
+        android:layout_height="192dp" />
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- Temp
+        <TextView
+            android:text="@string/current_temperature"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+            //-->
+        <!-- Buttons //-->
+            <RadioGroup
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:text="0"
+                    android:id="@+id/radio0"
+                    android:onClick="onRadioButtonClicked"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:text="1"
+                    android:id="@+id/radio1"
+                    android:onClick="onRadioButtonClicked"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:text="2"
+                    android:id="@+id/radio2"
+                    android:onClick="onRadioButtonClicked"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:text="3"
+                    android:id="@+id/radio3"
+                    android:onClick="onRadioButtonClicked"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+    </LinearLayout>
+
+</RelativeLayout>

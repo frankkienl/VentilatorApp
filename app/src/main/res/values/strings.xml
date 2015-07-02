@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Cooling fan</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="current_temperature">Current temperature:</string>
+</resources>
